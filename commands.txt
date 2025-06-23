@@ -1,2 +1,12 @@
+
+npm create amplify@latest
+    - add amplify to your app
 aws configure list-profiles
 npx ampx sandbox
+npx ampx sandbox --profile protonAmplify
+npx ampx sandbox delete
+
+import { Amplify } from "aws-amplify";
+import outputs from "../amplify_outputs.json";
+
+Amplify.configure(outputs);
