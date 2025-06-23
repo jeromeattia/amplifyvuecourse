@@ -1,10 +1,21 @@
-<script setup lang="ts">
-import Todos from './components/Todos.vue'
+<script>
+import { Amplify } from "aws-amplify";
+export default{
+  data(){
+    return{}
+  },
+  name: 'app',
+  mounted() {
+    console.log(Amplify.getConfig())
+  },
+
+}
+
 </script>
 
 <template>
   <main>
-    <Todos />
+    <h1>Death to todos !</h1>
   </main>
 </template>
 
